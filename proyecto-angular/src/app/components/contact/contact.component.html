@@ -1,0 +1,26 @@
+<div id="container">
+    <!-- componente padre -->
+    <h1>Contacto</h1>
+<!-- Acceder a los elementos como en js document.querySelector -->
+<div id="texto" #textos>
+        <p [hidden]="false" appResaltado>
+            Esta es la página de contacto, puedes enviarnos cualquier duda.</p>
+</div>
+ 
+   
+    <h4>Tamaño de Slider </h4>
+    <input type="number" [(ngModel)]="widthSlider"/>
+        <button (click)="cargarSlider();" >Cargar Slider</button>
+        <button (click)="resetSlider();" >Resetear Slider</button>
+    <!-- <div> -->
+    <div *ngIf="withToSlider">
+
+        <!-- componente hijo -->
+        <!-- utilizar el método getAutor, $event para conseguir los datos -->
+        <slider [anchura]="withToSlider"
+            [etiquetas]="captions"
+            (getAutor)="getAutorFather($event)"
+        ></slider>
+    </div>
+    {{"Autor: " + autor.nombre + " web: " + autor.web}}
+</div>

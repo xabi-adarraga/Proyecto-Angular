@@ -1,0 +1,27 @@
+{
+  "name": "api-rest-nodejs",
+  "version": "1.0.0",
+  "description": "Api Rest del master en js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmtomeX/Master-en-JavaScript-2019.git"
+  },
+  "author": "jose mari tome",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmtomeX/Master-en-JavaScript-2019/issues"
+  },
+  "homepage": "https://github.com/jmtomeX/Master-en-JavaScript-2019#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-multiparty": "^2.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.1",
+    "nodemon": "^1.19.2"
+  }
+}
